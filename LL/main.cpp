@@ -55,9 +55,10 @@ int main()
     cout << "LLTest: removed data " << data << endl;
     LinkedList.printList();
 
-    cout << "LLTest: Add -50 -60" << endl;
+    cout << "LLTest: Add -50 -60 -70" << endl;
     LinkedList.add(-50);
     LinkedList.add(-60);
+    LinkedList.addInPlace(-70, 3);
     LinkedList.printList();
 
     cout << "LLTest: remove last." << endl;
@@ -67,9 +68,15 @@ int main()
     cout << "LLTest: remove last." << endl;
     data = LinkedList.removeLast();
     cout << "LLTest: removed data " << data << endl;
+
+    cout << "LLTest: remove last." << endl;
+    data = LinkedList.removeLast();
+    cout << "LLTest: removed data " << data << endl;
     LinkedList.printList();
 
-#if 0
+    cout << "LLTest: remove last." << endl;
+    data = LinkedList.removeLast();
+
     cout << "LLTest: Add 1" << endl;
     LinkedList.add(1);
     LinkedList.printList();
@@ -114,6 +121,9 @@ int main()
 
     cout << "LLTest: remove last." << endl;
     data = LinkedList.removeLast();
-    LinkedList.printList();    
-#endif   
+    LinkedList.printList();  
+
+    cout << "LLTest: delete list." << endl;
+    LinkedList.deleteList();
+    LinkedList.printList();   
 }

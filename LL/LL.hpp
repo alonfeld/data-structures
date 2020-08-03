@@ -8,6 +8,7 @@ class LL {
     void addInPlace(int data, unsigned int location);
     int removeLast();
     int removeFirst();
+    void deleteList();
     void printList();
 
     private:
